@@ -1,0 +1,11 @@
+catppuccin-gtk-theme-mocha
+grimblast-git
+python-imageio-ffmpeg
+python-screeninfo
+spicetify-cli
+spicetify-cli-debug
+spotify
+waypaper
+yay-bin
+yay-bin-debug
+zen-browser-bin
