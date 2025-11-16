@@ -1,0 +1,44 @@
+* {
+  font-family: monospace;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#waybar {
+  background-color: #1e1e2e;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+/* Left modules */
+#custom-arch,
+#custom-media {
+  padding: 0 10px;
+}
+
+/* Center modules */
+#workspaces,
+#window {
+  padding: 0 10px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  border-radius: 50%;
+}
+
+#workspaces button.active {
+  border-radius: 15px;
+  padding: 0 15px;
+}
+
+/* Right modules */
+#clock,
+#pulseaudio,
+#custom-power {
+  padding: 0 10px;
+}
