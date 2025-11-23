@@ -1,0 +1,6 @@
+2025/11/22-21:19:02.617 a128 Creating DB /home/xwalfie/.config/vesktop/sessionData/WebStorage/2/IndexedDB/indexeddb.leveldb since it was missing.
+2025/11/22-21:19:02.620 a128 Reusing MANIFEST /home/xwalfie/.config/vesktop/sessionData/WebStorage/2/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2025/11/22-21:20:52.250 a127 Level-0 table #5: started
+2025/11/22-21:20:52.251 a127 Level-0 table #5: 14306 bytes OK
+2025/11/22-21:20:52.252 a127 Delete type=0 #3
+2025/11/22-21:20:52.252 a127 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

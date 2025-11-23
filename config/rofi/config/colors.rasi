@@ -1,0 +1,12 @@
+* {
+    BG:    #1E1E2Eff;  /* Base */
+    BGA:   #CBA6F7ff;  /* Mauve */
+    FG:    #CDD6F4ff;  /* Text */
+    FGA:   #CBA6F7ff;  /* Mauve */
+    BDR:   #CBA6F7ff;  /* Mauve border */
+    SEL:   #313244ff;  /* Surface0 selected */
+    UGT:   #F38BA8ff;  /* Red urgent */
+    IMG:   #F9E2AFff;  /* Yellow */
+    OFF:   #585B70ff;  /* Surface2 */
+    ON:    #A6E3A1ff;  /* Green */
+}

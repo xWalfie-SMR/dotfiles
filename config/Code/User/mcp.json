@@ -1,0 +1,21 @@
+{
+	"servers": {
+		"github/github-mcp-server": {
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/",
+			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/ab12cd34-5678-90ef-1234-567890abcdef",
+			"version": "0.13.0"
+		},
+		"makenotion/notion-mcp-server": {
+			"type": "http",
+			"url": "https://mcp.notion.com/sse",
+			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/2a045418-16b2-4ea6-bc36-113feb0df335",
+			"version": "1.0.0"
+		},
+		"ctonew/ctonew-mcp-server": {
+			"url": "https:///mcp.enginelabs.ai/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}
