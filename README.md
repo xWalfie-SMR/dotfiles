@@ -6,10 +6,11 @@ Clean Hyprland rice configuration for Arch Linux.
 
 - **OS**: Arch Linux
 - **Window Manager**: Hyprland (Wayland)
-- **Shell**: Zsh
+- **Shell**: Zsh with Oh My Zsh
 - **Terminal**: Kitty
 - **Prompt**: Starship
 - **Application Launcher**: Rofi
+- **Bar**: Quickshell
 - **Notification Daemon**: SwayNC
 - **Text Editor**: Neovim
 - **Browser**: Zen Browser
@@ -18,26 +19,31 @@ Clean Hyprland rice configuration for Arch Linux.
 ## Structure
 
     dotfiles/
-    ├── config/              # Application configurations
-    │   ├── btop/           # System monitor
-    │   ├── colors/         # Color schemes
-    │   ├── gtk-3.0/        # GTK3 theme settings
-    │   ├── gtk-4.0/        # GTK4 theme settings
-    │   ├── hypr/           # Hyprland WM config
-    │   ├── kitty/          # Terminal config
-    │   ├── nvim/           # Neovim config
-    │   ├── nwg-look/       # GTK theme manager
-    │   ├── rofi/           # Application launcher
-    │   ├── starship.toml   # Shell prompt
-    │   ├── swaync/         # Notifications
-    │   ├── WallRizz/       # Wallpaper manager
-    │   ├── waypaper/       # Wallpaper selector
-    │   └── xsettingsd/     # X settings daemon
+    ├── .config/
+    │   ├── btop/
+    │   ├── colors/
+    │   ├── gtk-3.0/
+    │   ├── gtk-4.0/
+    │   ├── hypr/
+    │   ├── kitty/
+    │   ├── nwg-look/
+    │   ├── quickshell/
+    │   ├── rofi/
+    │   ├── starship.toml
+    │   ├── swaync/
+    │   ├── WallRizz/
+    │   ├── waypaper/
+    │   └── xsettingsd/
+    ├── .zsh/
+    │   └── catppuccin_mocha-zsh-syntax-highlighting.zsh
     ├── packages/
-    │   ├── pkglist.txt     # Official packages
-    │   └── pkglist-aur.txt # AUR packages
-    ├── Pictures/           # Wallpapers
-    ├── install.sh          # Installation script
+    │   ├── pkglist.txt
+    │   └── pkglist-aur.txt
+    ├── Pictures/
+    ├── .zshrc
+    ├── .bashrc
+    ├── .bash_profile
+    ├── install.sh
     └── README.md
 
 ## Quick Install
@@ -51,37 +57,40 @@ Clean Hyprland rice configuration for Arch Linux.
 
 ### 1. Install Packages
 
-    # Official packages
     sudo pacman -S --needed - < packages/pkglist.txt
-
-    # AUR packages (requires yay/paru)
     yay -S --needed - < packages/pkglist-aur.txt
 
 ### 2. Deploy Configs
 
-    # Backup existing configs
-    cp -r ~/.config ~/.config.bak
+    cp -r .config/* ~/.config/
+    cp .zshrc ~/.zshrc
+    cp .bashrc ~/.bashrc
+    cp .bash_profile ~/.bash_profile
+    mkdir -p ~/.zsh
+    cp -r .zsh/* ~/.zsh/
 
-    # Copy configs
-    cp -r config/* ~/.config/
+### 3. Setup Zsh
 
-    # Copy wallpapers (if any)
-    cp -r Pictures/* ~/Pictures/
-
-### 3. Set Zsh as Default Shell
-
+    # Install Oh My Zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    
+    # Install plugins
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    
+    # Set as default shell
     chsh -s $(which zsh)
 
 ## Key Bindings
 
-Check config/hypr/hyprland.conf for all keybindings.
+Check .config/hypr/hyprland.conf for keybindings.
 
-## Customization
+## Credits
 
-- **Theme**: Catppuccin Mocha (GTK via nwg-look)
-- **Fonts**: JetBrains Mono Nerd Font
-- **Wallpapers**: Use WallRizz or waypaper GUI
+- Catppuccin theme
+- Hyprland
+- Quickshell
 
 ## License
 
-Feel free to use and modify as you wish.
+Free to use and modify.
