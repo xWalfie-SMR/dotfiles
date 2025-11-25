@@ -1,0 +1,14 @@
+catppuccin-gtk-theme-mocha
+cliphist
+grimblast-git
+hyprpolkitagent
+neovim-git
+papirus-folders
+quickshell-git
+swww
+ttf-google-fonts-typewolf
+ttf-jetbrains-mono-nerd
+ttf-meslo-nerd
+ttf-noto-nerd
+waypaper
+zen-browser-bin
