@@ -99,4 +99,10 @@ Check .config/hypr/hyprland.conf for keybindings.
 
 ## License
 
-Free to use and modify.
+MIT License (see [LICENSE](LICENSE))
+
+## TODO
+
+- Modify hyprland.conf
+- Add screenshots
+- Links and references
