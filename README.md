@@ -53,10 +53,10 @@ Clean Hyprland rice configuration for Arch Linux.
     chmod +x install.sh
     ./install.sh
 
-    # With curl:
+### With curl:
     curl -fsSL https://raw.githubusercontent.com/xWalfie-SMR/dotfiles/main/install.sh | sh
 
-    # With wget:
+### With wget:
     wget -qO- https://raw.githubusercontent.com/xWalfie-SMR/dotfiles/main/install.sh | sh
 
 ## Manual Installation
