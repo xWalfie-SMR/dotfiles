@@ -48,10 +48,16 @@ Clean Hyprland rice configuration for Arch Linux.
 
 ## Quick Install
 
-    git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/dotfiles
+    git clone https://github.com/xWalfie-SMR/dotfiles.git ~/dotfiles
     cd ~/dotfiles
     chmod +x install.sh
     ./install.sh
+
+    # With curl:
+    curl -fsSL https://raw.githubusercontent.com/xWalfie-SMR/dotfiles/main/install.sh | sh
+
+    # With wget:
+    wget -qO- https://raw.githubusercontent.com/xWalfie-SMR/dotfiles/main/install.sh | sh
 
 ## Manual Installation
 
