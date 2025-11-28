@@ -105,4 +105,5 @@ MIT License (see [LICENSE](LICENSE))
 
 - [ ] Modify hyprland.conf
 - [ ] Add screenshots
+- [x] Change quickshell status bar to be symlink to my repo
 - [ ] Links and references
