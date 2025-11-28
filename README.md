@@ -91,6 +91,19 @@ Minimalistic catppuccin-mocha themed rice for Hyprland (Arch Linux).
 
 Check .config/hypr/hyprland.conf for keybindings.
 
+## NVIDIA Users
+
+Uncomment the line:
+```bash
+```
+source = ~/.config/hypr/nvidia.conf
+
+In:
+
+`~/.config/hypr/hyprland.conf`
+```
+
+
 ## Credits
 
 - Catppuccin theme
