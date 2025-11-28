@@ -1,6 +1,6 @@
 # Dotfiles
 
-Clean Hyprland rice configuration for Arch Linux.
+Minimalistic catppuccin-mocha themed rice for Hyprland (Arch Linux).
 
 ## System Information
 
