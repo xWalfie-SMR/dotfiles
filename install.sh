@@ -28,7 +28,7 @@ fi
 # Install packages
 echo -e "${YELLOW}Installing packages...${NC}"
 if command -v pacman &> /dev/null; then
-    sudo pacman -S --needed - < packages/pkglist.txt
+    sudo pacman -S --needed --noconfirm - < packages/pkglist.txt
 else
     echo -e "${RED}pacman not found. Are you on Arch?${NC}"
     exit 1
@@ -37,9 +37,9 @@ fi
 # AUR helper check
 echo -e "${YELLOW}Installing AUR packages...${NC}"
 if command -v yay &> /dev/null; then
-    yay -S --needed - < packages/pkglist-aur.txt
+    yay -S --needed --noconfirm - < packages/pkglist-aur.txt
 elif command -v paru &> /dev/null; then
-    paru -S --needed - < packages/pkglist-aur.txt
+    paru -S --needed --noconfirm - < packages/pkglist-aur.txt
 else
     echo -e "${YELLOW}No AUR helper found. Install yay/paru first or install AUR packages manually.${NC}"
     echo "Skipping AUR packages..."
