@@ -94,15 +94,14 @@ Check .config/hypr/hyprland.conf for keybindings.
 ## NVIDIA Users
 
 Uncomment the line:
+
 ```bash
-```
 source = ~/.config/hypr/nvidia.conf
+```
 
 In:
 
 `~/.config/hypr/hyprland.conf`
-```
-
 
 ## Credits
 
