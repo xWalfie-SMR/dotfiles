@@ -11,10 +11,18 @@ DOTFILES="$HOME/dotfiles"
 
 echo -e "${GREEN}=== Hyprland Rice Installer ===${NC}\n"
 
-# Check if running from dotfiles directory
+# Clone directory and cd into it if doesn't exist
 if [ ! -f "README.md" ] || [ ! -d ".config" ]; then
-    echo -e "${RED}Error: Run this script from the dotfiles directory${NC}"
-    exit 1
+    echo -e "${YELLOW}Cloning dotfiles repository...${NC}"
+    
+    if [ -d "$DOTFILES" ]; then
+        echo -e "${YELLOW}$DOTFILES already exists. Pulling latest...${NC}"
+        git -C "$DOTFILES" pull
+    else
+        git clone https://github.com/xWalfie-SMR/dotfiles.git "$DOTFILES"
+    fi
+    
+    cd "$DOTFILES" || exit 1
 fi
 
 # Install packages
