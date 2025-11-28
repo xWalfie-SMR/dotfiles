@@ -103,6 +103,6 @@ MIT License (see [LICENSE](LICENSE))
 
 ## TODO
 
-- Modify hyprland.conf
-- Add screenshots
-- Links and references
+- [ ] Modify hyprland.conf
+- [ ] Add screenshots
+- [ ] Links and references
